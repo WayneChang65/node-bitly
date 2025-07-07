@@ -7,7 +7,7 @@
     "name": "your-project",
     "version": "1.0.0",
     "dependencies": {
-    "bitly": "https://github.com/WayneChang65/node-bitly/raw/vul-250707/bitly-7.1.3-wayne.tgz"
+    "bitly": "https://github.com/WayneChang65/node-bitly/raw/main-wayne/bitly-7.1.3-wayne.tgz"
     },
     ...
 }
