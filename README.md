@@ -1,5 +1,19 @@
 # node-bitly - Unofficial Bitly API for nodejs
 
+## :exclamation::exclamation::exclamation:v7.1.2b: Addressing vulnerabilities by updating dependencies  
+
+``` js
+{
+    "name": "your-project",
+    "version": "1.0.0",
+    "dependencies": {
+    "bitly": "https://github.com/WayneChang65/node-bitly/raw/vul-250707/bitly-7.1.3-wayne.tgz"
+    },
+    ...
+}
+```
+
+---
 [![CircleCI](https://circleci.com/gh/tanepiper/node-bitly.svg?style=svg)](https://circleci.com/gh/tanepiper/node-bitly) [![NPM version](https://badge.fury.io/js/bitly.png)](http://badge.fury.io/js/bitly) [![Dependencies](https://david-dm.org/tanepiper/node-bitly.svg)](https://david-dm.org/tanepiper/node-bitly)
 
 ### V6.x.x to V7.x.x transition - aka V3 of Bitly API to V4 - Breaking Changes

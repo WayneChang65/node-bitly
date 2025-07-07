@@ -9,7 +9,7 @@
     "util"
   ],
   "homepage": "https://github.com/tanepiper/node-bitly",
-  "version": "7.1.2",
+  "version": "7.1.3-wayne",
   "author": {
     "name": "Tane Piper",
     "url": "https://github.com/tanepiper"
@@ -53,26 +53,30 @@
     "node": ">= 10.0.0"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register --reporter list src/*.spec.ts",
+    "pack-it": "npm run build && npm pack",
+    "pretest": "npx tsc -p tsconfig.test.json",
+    "test": "mocha --reporter list dist-test/*.spec.js",
     "build": "npx tsc",
     "docs": "rm -rf ./docs && npx typedoc --readme ./README.md --out ./docs && touch ./docs/.nojekyll"
   },
   "devDependencies": {
+    "@testdeck/mocha": "^0.3.3",
     "@types/chai": "^4.2.10",
-    "@types/node": "^13.7.7",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.0.10",
     "chai": "^4.2.0",
-    "jsdoc": "^3.6.3",
+    "jsdoc": "^4.0.4",
     "minami": "^1.2.3",
-    "mocha": "^7.1.0",
-    "mocha-typescript": "^1.1.17",
-    "np": "^5.2.1",
+    "mocha": "^11.7.1",
+    "np": "^10.2.0",
     "replay": "^2.4.0",
-    "ts-node": "^8.6.2",
-    "typedoc": "^0.16.11",
-    "typescript": "^3.8.3"
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.28.7",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "@types/axios": "^0.14.4",
+    "axios": "^1.10.0",
     "valid-url": "^1.0.9"
   },
   "main": "dist/index.js",
