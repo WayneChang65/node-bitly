@@ -1,6 +1,6 @@
 # node-bitly - Unofficial Bitly API for nodejs
 
-## :exclamation::exclamation::exclamation:v7.1.2b: Addressing vulnerabilities by updating dependencies  
+## :exclamation::exclamation::exclamation:v7.1.3-wayne: Addressing vulnerabilities by updating dependencies  
 
 ``` js
 {
